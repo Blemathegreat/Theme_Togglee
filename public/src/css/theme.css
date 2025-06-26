@@ -1,4 +1,4 @@
-
+/* Base theme variables */
 :root {
   --color-bg: #ffffff;
   --color-text: #181818;
@@ -18,10 +18,12 @@
   --color-toggle-icon: #f3f4f6;
 }
 
+/* Smooth transitions */
 html, body {
   transition: var(--transition);
 }
 
+/* Page styles */
 body {
   background: var(--color-bg);
   color: var(--color-text);
