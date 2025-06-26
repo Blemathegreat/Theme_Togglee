@@ -1,0 +1,66 @@
+
+:root {
+  --color-bg: #ffffff;
+  --color-text: #181818;
+  --color-primary: #2563eb;
+  --color-header: #f3f4f6;
+  --color-toggle-bg: #e5e7eb;
+  --color-toggle-icon: #181818;
+  --transition: background 0.3s, color 0.3s;
+}
+
+[data-theme="dark"] {
+  --color-bg: #181818;
+  --color-text: #f3f4f6;
+  --color-primary: #60a5fa;
+  --color-header: #23272f;
+  --color-toggle-bg: #374151;
+  --color-toggle-icon: #f3f4f6;
+}
+
+html, body {
+  transition: var(--transition);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header {
+  background: var(--color-header);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: var(--transition);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+#theme-toggle {
+  background: var(--color-toggle-bg);
+  color: var(--color-toggle-icon);
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#theme-toggle:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
